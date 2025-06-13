@@ -1,4 +1,4 @@
-# 🧪 pyana
+# 🧪 analysis-utils
 
 Python-based analysis toolkit for scientific data processing.
 
@@ -6,7 +6,7 @@ Python-based analysis toolkit for scientific data processing.
 
 ## 🔰 Overview
 
-`pyana` は、実験データやシミュレーションデータの解析に役立つ汎用的なツール群を集めた Python ライブラリです。スペクトル解析、2次元マップ解析、物理定数、ユーティリティ関数などを包括的に提供します。
+`analysis-utils` は、実験データやシミュレーションデータの解析でよく使うメソッドをリファクタした Python ライブラリです。スペクトル解析、2次元マップ解析、物理定数、ユーティリティ関数などが含まれています。
 
 - 🧮 FFTとスペクトログラム
 - 📈 ピーク検出・フィッティング・積分
@@ -15,21 +15,7 @@ Python-based analysis toolkit for scientific data processing.
 
 ---
 
-## 📦 Installation
-
-### ✅ Standard installation
-
-You can install `pyana` directly from the GitHub repository using pip:
-
-```bash
-pip install git+https://github.com/yourname/pyana.git
-```
-
-> Note: This project uses a `pyproject.toml`-based build. No `setup.py` is required.
-
----
-
-### 🧪 Editable (development) installation
+### 🧪 installation
 
 To install the project in "editable" mode (for local development):
 
@@ -44,17 +30,24 @@ pip install -e .
 ## 📁 Project structure (src layout)
 
 ```
-pyana/
-├── pyproject.toml
-├── src/
-│   └── pyana/
-│       ├── __init__.py
-│       ├── utils.py
-│       ├── map2d.py
-│       └── ...
+.
 ├── README.md
-├── VERSION.txt
-└── docs/
+├── __init__.py
+├── analyze.py
+├── constants.py
+├── docs
+│   ├── constants.md
+│   ├── fft_utils.md
+│   ├── funcs.md
+│   ├── map2d.md
+│   ├── signal1d.md
+│   └── utils.md
+├── fft_utils.py
+├── funcs.py
+├── map2d.py
+├── signal1d.py
+├── tests
+└── utils.py
 ```
 
 ---
@@ -66,13 +59,11 @@ This project depends on:
 - `numpy`
 - `matplotlib`
 
-These will be automatically installed via `pyproject.toml`.
-
 ---
 
 ## 🧠 Python version
 
-Requires **Python 3.8 or higher**.
+Requires **Python 3.12**.
 
 ---
 
@@ -118,19 +109,3 @@ z = np.random.rand(len(y), len(x))
 mp = Map2D(x, y, z)
 mp.plot()
 ```
-
----
-
-## 📄 License
-
-MIT License
-
----
-
-## ✨ Author
-
-Hiroki Tsusaka @1160-hrk  
-The University of Tokyo
- → commit
-
-# analysis-utils
