@@ -20,8 +20,8 @@ Python-based analysis toolkit for scientific data processing.
 To install the project in "editable" mode (for local development):
 
 ```bash
-git clone https://github.com/yourname/pyana.git
-cd pyana
+git clone https://github.com/yourname/analysis-utils.git
+cd analysis-utils
 pip install -e .
 ```
 
