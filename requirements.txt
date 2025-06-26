@@ -1,0 +1,30 @@
+# 科学計算・数値計算ライブラリ
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.6.0
+
+# Jupyter環境
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+notebook>=6.5.0
+ipywidgets>=8.0.0
+
+# 開発・テストツール
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=23.0.0
+pylint>=2.17.0
+mypy>=1.0.0
+isort>=5.12.0
+
+# 型ヒント関連
+types-requests>=2.28.0
+
+# ドキュメント生成
+sphinx>=6.0.0
+sphinx-rtd-theme>=1.2.0
+
+# その他の便利なライブラリ
+pandas>=2.0.0
+seaborn>=0.12.0
+tqdm>=4.65.0 
